@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<title>爱同人</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html,body { height:100%; }
+  body {
+    display:flex; align-items:center; justify-content:center;
+    background:radial-gradient(120% 100% at 50% 0%, #2a1f3d 0%, #14101d 45%, #0a0810 100%);
+    color:#f2eefc;
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
+    padding:32px;
+  }
+  .card { text-align:center; max-width:340px; width:100%; }
+  .mark {
+    width:72px; height:72px; margin:0 auto 22px;
+    border-radius:22px;
+    background:linear-gradient(145deg,#8b5cf6,#d946a8);
+    display:flex; align-items:center; justify-content:center;
+    font-size:30px; font-weight:600; letter-spacing:1px;
+    box-shadow:0 12px 36px rgba(139,92,246,.35);
+  }
+  h1 { font-size:22px; font-weight:600; letter-spacing:2px; margin-bottom:10px; }
+  .sub { font-size:13px; color:#9c92b8; letter-spacing:.5px; line-height:1.7; }
+  .bar {
+    margin:26px auto 0; width:120px; height:3px;
+    background:rgba(255,255,255,.1); border-radius:3px; overflow:hidden;
+  }
+  .bar i {
+    display:block; height:100%; width:0;
+    background:linear-gradient(90deg,#8b5cf6,#d946a8);
+    animation:load 1.8s cubic-bezier(.4,0,.2,1) forwards;
+  }
+  @keyframes load { to { width:100%; } }
+  .btn {
+    display:inline-block; margin-top:30px; padding:13px 34px;
+    border-radius:999px; text-decoration:none; font-size:14px; font-weight:500;
+    color:#fff; background:linear-gradient(135deg,#8b5cf6,#d946a8);
+    box-shadow:0 8px 24px rgba(139,92,246,.3);
+  }
+  .tip { margin-top:18px; font-size:11px; color:#6b6280; line-height:1.8; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="mark">爱</div>
+  <h1>爱同人</h1>
+  <p class="sub">正在前往主页…</p>
+  <div class="bar"><i></i></div>
+  <a class="btn" href="https://link3.cc/4590110">立即进入</a>
+  <p class="tip">若未自动跳转，请点击上方按钮</p>
+</div>
+<script>
+  var TARGET = "https://link3.cc/4590110";
+  setTimeout(function () {
+    location.replace(TARGET);
+  }, 1800);
+</script>
+</body>
+</html>
